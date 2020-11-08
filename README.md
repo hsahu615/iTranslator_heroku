@@ -7,7 +7,7 @@ You can open iTranslator by [Clicking Here](https://itranslator.herokuapp.com/ho
 <a href="https://ibb.co/wzpsrXS"><img src="https://i.ibb.co/cr2LXH6/Screenshot-34.png" alt="Screenshot-34" border="0"></a>
 
 ## Language
-- Python: I used Python Language to form this application. I used Flask framework for back-end development. There is Google Translator open source library **googletrans** for providing API of google translator. Rest of imported libraries you can see below
+- Python: First of all sorry I hid python file because it contains some password for mail service. I used Python Language to form this application. I used Flask framework for back-end development. There is Google Translator open source library **googletrans** for providing API of google translator. Rest of imported libraries you can see below
 
 ```
 from flask import Flask, render_template, request, url_for
