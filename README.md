@@ -23,7 +23,9 @@ Here I imported googletrans as it is the foundation of this project, than I impo
  - HTMl(Hypertext Markup Language): I used HTML for front-end development. There are 7 HTML pages used in this project in which Base is the main HTML page and others are connected with it by **{% extends base.html %}** command. This html files are present in templates folder.
  - CSS: It has been used for the styling of Webpage by setting Background image and designing navbar, font, color etcetra.
  <br>
+ 
  ## Deployment
+ <br>
  I deployed this application on Heroku Cloud Platform it is an awesome cloud platform specially for beginner, It is absolutely for some deployment, you can deploy your
  application by GITHUB directly or you can use Heroku CLI commands.
  [Heroku Link](https://itranslator.herokuapp.com/home).
