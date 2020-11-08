@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style:none;
+}
+nav{
+    background:#2874f0;
+    height:100px;
+    width:100%;
+    font-family: 'Dancing Script', cursive;
+}
+label.logo{
+    color:white;
+    font-size: 35px;
+    padding:0 90px;
+    line-height:100px;
+}
+.img{
+    color:white;
+    font-size: 35px;
+    margin:auto;
+    line-height:80px;
+}
+nav ul{
+    float: right;
+    margin-right: 300px;
+}
+nav ul li{
+    display: inline-block;
+    line-height:100px;
+    margin: 0 10px ;
+}
+nav ul li a{
+    color:white;
+    font-size: 20px;
+    font-weight:20px;
+    padding: 7px 13px;
+    border-radius:5px;
+    text-transform:uppercase;
+}
+a.active, a:hover{
+    background:#1b9bff;
+    transition: .3s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height: 100px;
+    margin-right:40px;
+    cursor: pointer;
+}
+#check{
+    display:none;
+}
+section{
+    background:rgba(255, 255, 255, 0.9);
+    height: 400px;
+    width: 700px;
+    border-radius:20px;
+    position:relative;
+    margin-left:450px;
+    margin-top:150px;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size:25px;
+    padding-top:60px;
+    padding-left:70px;
+    box-shadow: 10px 10px 8px #888888;
+}
+label.enter_text{
+    padding-left: 130px;
+}
+.button {
+  background-color: #2874f0;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:245px;
+  box-shadow: 7px 7px 8px #888888;
+
+}
+.search{
+    height:40px;
+    align:top;
+}
+header{
+    height:100vh;
+}
+label.dest{
+    padding-left:10px;
+}
+select{
+    width:200px;
+    height:40px;
+    margin:10px;
+}
+select:focus {
+        min-width: 150px;
+        width: auto;
+}
+
+textarea { font-size: 18px;
+}
+
+/* @media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size:16px;
+    }
+} 
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+
+    
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:#2c3e50;
+        top:100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display:block;
+        padding-top: 25px;
+    }
+    nav ul li a{
+        font-size:20px;
+    }
+    a.active,a:hover{
+        background:none;
+        color: #0082e5;
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+}*/

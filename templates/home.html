@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>iTranslator</title>
+{% endblock %}
+
+{% block body %}
+<section>
+        <form name="myform" action="." method="POST">
+            <label for="from">From: </label>
+            <select name="froms" id="from">
+                {% for lan in language %}
+                <option value={{ lan }}>{{ lan }}</option>
+                {% endfor %}
+            </select>
+            <label class="dest" for="to">To: </label>
+            <select name="to" id="to">
+                {% for lan in language[1:] %}
+                <option value={{ lan }}>{{ lan }}</option>
+                {% endfor %}
+            </select>
+            <br>
+            <br>
+            <label for="ent" class="enter_text">Enter Text: </label>
+            <input type="text" name="tex" placeholder="Enter here" class="search" id="ent"></p>
+            <br>
+            <br>
+            <input class="button" type="submit" value="search">
+    </form>
+</section>
+
+{% endblock %}
+

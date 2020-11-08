@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="static/images/icon.ico" />
+    {% block title %}
+    {% endblock %}
+
+</head>
+<body>
+    <header class="intro-header" style="background-image: url({{ url_for('static', filename='images/bg.jpg') }});">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <img src="{{ url_for('static', filename='images/icon1.png') }}" alt="icon.png" height="70" width="70" class="icon">
+
+        <label class="logo">
+            iTranslator
+        </label>
+
+        <ul>
+            <li><a class="home" href="/home">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+        </ul>
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
